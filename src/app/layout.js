@@ -98,9 +98,9 @@ export default function Layout({ children }) {
         <link rel="stylesheet" href="/css/style.css" type="text/css" />
     
         <meta name="google-site-verification" content="J4jrkz6_PD9FvgrdULLwuyAp6hq_JIVx9CXgRplG7xw" />
-        {/* Google Analytics (G-ZZFB2YV2JH) */}
+        {/* Google Analytics (G-S6CCCYDF08) */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-ZZFB2YV2JH"
+          src="https://www.googletagmanager.com/gtag/js?id=G-S6CCCYDF08"
           strategy="afterInteractive"
         />
         <Script id="ga-main" strategy="afterInteractive">
@@ -108,7 +108,7 @@ export default function Layout({ children }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-ZZFB2YV2JH');
+            gtag('config', 'G-S6CCCYDF08');
           `}
         </Script>
         {/* Google Ads (AW-17927547758) */}
