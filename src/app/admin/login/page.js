@@ -134,7 +134,8 @@ export default function AdminLoginPage() {
                     boxSizing: "border-box",
                     transition: "all 0.2s ease",
                     outline: "none",
-                    background: "#ffffff"
+                    background: "#ffffff",
+                    color: "#111111"
                   }}
                   onFocus={(e) => {
                     e.target.style.borderColor = "#2563eb";
@@ -182,7 +183,8 @@ export default function AdminLoginPage() {
                     boxSizing: "border-box",
                     transition: "all 0.2s ease",
                     outline: "none",
-                    background: "#ffffff"
+                    background: "#ffffff",
+                    color: "#111111"
                   }}
                   onFocus={(e) => {
                     e.target.style.borderColor = "#2563eb";

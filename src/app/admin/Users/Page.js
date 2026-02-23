@@ -142,7 +142,11 @@ export default function AdminUsersPage() {
                   <td>
                     <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
                       <div style={{ width: "40px", height: "40px", borderRadius: "50%", background: "#e0e7ff", color: "#4f46e5", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 700 }}>
-                        {user.fullName ? user.fullName.charAt(0).toUpperCase() : user.email.charAt(0).toUpperCase()}
+                        {user.fullName && typeof user.fullName === 'string' && user.fullName.length > 0
+                          ? user.fullName.charAt(0).toUpperCase()
+                          : (user.email && typeof user.email === 'string' && user.email.length > 0
+                              ? user.email.charAt(0).toUpperCase()
+                              : '?')}
                       </div>
                       <div>
                         <div style={{ fontWeight: 600, color: "#111827" }}>{user.fullName || "N/A"}</div>
@@ -214,31 +218,120 @@ export default function AdminUsersPage() {
       >
         {selectedUser && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '16px', paddingBottom: '24px', borderBottom: '1px solid #e5e7eb' }}>
-              <div style={{ width: "64px", height: "64px", borderRadius: "50%", background: "#e0e7ff", color: "#4f46e5", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "24px", fontWeight: 700 }}>
-                {selectedUser.fullName ? selectedUser.fullName.charAt(0).toUpperCase() : selectedUser.email.charAt(0).toUpperCase()}
+            <div
+              style={{
+                borderRadius: '18px 18px 0 0',
+                background: 'linear-gradient(90deg, #2563eb 0%, #1e40af 100%)',
+                padding: 'clamp(18px,4vw,32px)',
+                display: 'flex',
+                flexDirection: 'row',
+                alignItems: 'center',
+                gap: 'clamp(12px,4vw,32px)',
+                boxShadow: '0 8px 32px rgba(37,99,235,0.10)',
+                position: 'relative',
+                margin: 'clamp(-16px,-2vw,-24px) clamp(-16px,-2vw,-24px) 0 clamp(-16px,-2vw,-24px)',
+                color: '#fff',
+                borderBottom: '4px solid #e0e7ff',
+                flexWrap: 'wrap'
+              }}
+            >
+              <div style={{
+                width: 'clamp(56px,10vw,80px)', height: 'clamp(56px,10vw,80px)', borderRadius: '50%', background: '#fff', color: '#2563eb',
+                display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 'clamp(22px,4vw,36px)', fontWeight: 800,
+                boxShadow: '0 2px 12px rgba(37,99,235,0.10)', border: '3px solid #e0e7ff', flexShrink: 0
+              }}>
+                {selectedUser.fullName && typeof selectedUser.fullName === 'string' && selectedUser.fullName.length > 0
+                  ? selectedUser.fullName.charAt(0).toUpperCase()
+                  : (selectedUser.email && typeof selectedUser.email === 'string' && selectedUser.email.length > 0
+                      ? selectedUser.email.charAt(0).toUpperCase()
+                      : '?')}
               </div>
-              <div>
-                <h4 style={{ fontSize: '18px', fontWeight: 700, margin: 0 }}>{selectedUser.fullName || 'N/A'}</h4>
-                <p style={{ color: '#6b7280', margin: 0 }}>{selectedUser.email}</p>
-                <span className={`${styles.statBadge} ${styles.badgeGreen}`} style={{ marginTop: '8px', display: 'inline-block' }}>Active User</span>
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <h4 style={{ fontSize: 'clamp(18px,3vw,24px)', fontWeight: 800, margin: 0, color: '#fff', letterSpacing: '0.01em', wordBreak: 'break-word' }}>{selectedUser.fullName || 'N/A'}</h4>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginTop: 4, flexWrap: 'wrap' }}>
+                  <i className="fas fa-envelope" style={{ color: '#e0e7ff', fontSize: '15px' }}></i>
+                  <span style={{ color: '#e0e7ff', fontSize: 'clamp(13px,2vw,15px)', fontWeight: 500, wordBreak: 'break-all' }}>{selectedUser.email}</span>
+                </div>
+                <span className={`${styles.statBadge} ${styles.badgeGreen}`} style={{ marginTop: '12px', display: 'inline-block', fontSize: 'clamp(11px,2vw,13px)', padding: '5px 14px', background: '#22c55e', color: '#fff', borderRadius: '8px', fontWeight: 700, letterSpacing: '0.04em' }}>Active User</span>
               </div>
             </div>
 
             <div>
-              <h5 style={{ fontSize: '14px', fontWeight: 600, color: '#374151', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Personal Information</h5>
-              <div className={styles.detailRow}>
-                <span className={styles.detailLabel}>User ID</span>
-                <span className={styles.detailValue}>#{selectedUser.id}</span>
+              <h5 style={{ fontSize: 'clamp(13px,2vw,15px)', fontWeight: 700, color: '#1e293b', marginBottom: '18px', textTransform: 'uppercase', letterSpacing: '0.06em', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <i className="fas fa-user-circle" style={{ color: '#2563eb', fontSize: '18px' }}></i> Personal Information
+              </h5>
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: '1fr 1fr',
+                  gap: 'clamp(10px,2vw,18px) clamp(18px,4vw,32px)',
+                  background: '#f9fafb',
+                  borderRadius: '12px',
+                  padding: 'clamp(10px,2vw,20px)',
+                  border: '1px solid #e5e7eb',
+                  marginBottom: '10px',
+                  boxSizing: 'border-box',
+                }}
+              >
+                <div>
+                  <div style={{ color: '#64748b', fontWeight: 600, fontSize: 'clamp(11px,1.5vw,13px)' }}>User ID</div>
+                  <div style={{ color: '#1e293b', fontWeight: 700, fontSize: 'clamp(13px,2vw,15px)', marginTop: 2 }}>#{selectedUser.id}</div>
+                </div>
+                <div>
+                  <div style={{ color: '#64748b', fontWeight: 600, fontSize: 'clamp(11px,1.5vw,13px)' }}>Mobile Number</div>
+                  <div style={{ color: '#1e293b', fontWeight: 700, fontSize: 'clamp(13px,2vw,15px)', marginTop: 2 }}>{selectedUser.mobile || 'N/A'}</div>
+                </div>
+                <div>
+                  <div style={{ color: '#64748b', fontWeight: 600, fontSize: 'clamp(11px,1.5vw,13px)' }}>Joined Date</div>
+                  <div style={{ color: '#1e293b', fontWeight: 700, fontSize: 'clamp(13px,2vw,15px)', marginTop: 2 }}>{new Date(selectedUser.createdAt).toLocaleDateString()}</div>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                  <div style={{ color: '#64748b', fontWeight: 600, fontSize: 'clamp(11px,1.5vw,13px)' }}>TRC20 Wallet</div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+                    <span style={{ fontFamily: 'monospace', color: '#2563eb', fontSize: 'clamp(12px,2vw,14px)', fontWeight: 700, marginTop: 2, wordBreak: 'break-all' }}>{selectedUser.trc20Address || 'N/A'}</span>
+                    {selectedUser.trc20Address && (
+                      <button
+                        title="Copy"
+                        style={{
+                          border: 'none', background: 'none', cursor: 'pointer', padding: 0, marginLeft: 2
+                        }}
+                        onClick={() => {
+                          navigator.clipboard.writeText(selectedUser.trc20Address);
+                        }}
+                      >
+                        <i className="fas fa-copy" style={{ color: '#2563eb', fontSize: 'clamp(13px,2vw,16px)' }}></i>
+                      </button>
+                    )}
+                  </div>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                  <div style={{ color: '#64748b', fontWeight: 600, fontSize: 'clamp(11px,1.5vw,13px)' }}>ERC20 Wallet</div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+                    <span style={{ fontFamily: 'monospace', color: '#059669', fontSize: 'clamp(12px,2vw,14px)', fontWeight: 700, marginTop: 2, wordBreak: 'break-all' }}>{selectedUser.erc20Address || 'N/A'}</span>
+                    {selectedUser.erc20Address && (
+                      <button
+                        title="Copy"
+                        style={{
+                          border: 'none', background: 'none', cursor: 'pointer', padding: 0, marginLeft: 2
+                        }}
+                        onClick={() => {
+                          navigator.clipboard.writeText(selectedUser.erc20Address);
+                        }}
+                      >
+                        <i className="fas fa-copy" style={{ color: '#059669', fontSize: 'clamp(13px,2vw,16px)' }}></i>
+                      </button>
+                    )}
+                  </div>
+                </div>
               </div>
-              <div className={styles.detailRow}>
-                <span className={styles.detailLabel}>Mobile Number</span>
-                <span className={styles.detailValue}>{selectedUser.mobile || 'N/A'}</span>
-              </div>
-              <div className={styles.detailRow}>
-                <span className={styles.detailLabel}>Joined Date</span>
-                <span className={styles.detailValue}>{new Date(selectedUser.createdAt).toLocaleDateString()}</span>
-              </div>
+              {/* Responsive: stack columns on small screens */}
+              <style>{`
+                @media (max-width: 600px) {
+                  .user-modal-grid {
+                    grid-template-columns: 1fr !important;
+                  }
+                }
+              `}</style>
             </div>
 
             <div>
