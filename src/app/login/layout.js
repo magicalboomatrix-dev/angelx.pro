@@ -12,7 +12,7 @@ export const metadata = {
     "angelx exchange",
   ],
   alternates: {
-    canonical: "https://www.angelx.ind.in/login",
+    canonical: "https://www.angelx.pro/login",
   },
   robots: {
     index: true,

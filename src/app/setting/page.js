@@ -82,7 +82,7 @@ export default function SettingPage() {
                   </Link>
                 </div>
                 <div className="bx">
-                  <Link href="https://angelx.ind.in/AngelX.apk">
+                  <Link href="https://angelx.pro/AngelX.apk">
                     <div className="image">
                       <h3>
                         <img src="/images/s-icon4.jpg" /> Intall the official version
