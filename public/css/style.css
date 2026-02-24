@@ -793,10 +793,6 @@ footer.footer {
 	background-size: 100%;
 }
 
-.page-wrappers.home-wrappers .page-wrapper {
-    /*position: relative;
-    margin-top: 0;*/
-}
 
 .page-wrappers.home-wrappers header.header {
     z-index: 9;
@@ -2060,10 +2056,6 @@ footer.footer {
 	background-size: 100%;
 }
 
-.page-wrappers.home-wrappers .page-wrapper {
-
-}
-
 
 .page-wrappers.home-wrappers header.header {
     z-index: 9;
@@ -2708,7 +2700,6 @@ a.setting {
     margin-left: 20px;
 }
 
-.setting-header {}
 
 .setting-header .d-flex {
     display: flex;
@@ -2776,8 +2767,6 @@ header.header.setting-header {
     letter-spacing: 0;
     font-size: 15px;
 }
-
-.page-wrappers.setting-wrapper {}
 
 .page-wrappers.setting-wrapper button.button-style.logout {
     background: #fff;
