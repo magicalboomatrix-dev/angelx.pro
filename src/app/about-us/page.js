@@ -7,7 +7,7 @@ const Aboutpage = () => {
   return (
     <div>
       <div className="pagee">
-      <main>
+      <main> 
         <div className="page-wrappers" style={{paddingBottom: '100px', height:'auto'}}>
           <div className="page-wrapperss page-wrapper-ex page-wrapper-login">
             <div className="back-btn">

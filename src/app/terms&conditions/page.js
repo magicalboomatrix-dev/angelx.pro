@@ -171,7 +171,7 @@ const Aboutpage = () => {
     margin: auto;
 }
     .terms-box {
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 6px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 6px; 
     line-height: 1.6;
     margin-top: 10px;
     background: rgb(255, 255, 255);

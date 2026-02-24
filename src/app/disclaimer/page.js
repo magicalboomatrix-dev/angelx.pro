@@ -159,7 +159,7 @@ const Aboutpage = () => {
     color: rgb(46, 46, 46);
     font-size: 26px;
     font-weight: 700;
-}
+} 
     .disclaimer-box p {
     color: rgb(102, 102, 102);
     font-size: 14px;

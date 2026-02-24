@@ -753,7 +753,7 @@ export default function Index() {
         </tr>
       </tbody>
     </table>
-  </section>
+  </section> 
 
   <section className="bottom-footer-section">
         <div className='copyr'>©2022 - 2026 AngelX. All rights reserved. Powered by Binance.</div>
