@@ -125,7 +125,7 @@ export default function Index() {
             </div>
         </header>
 
-        <div className="page-wrapper" style={{paddingTop: '2px', marginTop: '0px'}}>
+        <div className="page-wrapper" style={{paddingTop: '2px', paddingBottom: '100px', marginTop: '0px'}}>
             <section className="section-1 hm-section-1">
             <div className="image">
                 <Image                
@@ -754,6 +754,18 @@ export default function Index() {
       </tbody>
     </table>
   </section>
+
+  <section className="bottom-footer-section">
+        <div className='copyr'>©2022 - 2026 AngelX. All rights reserved. Powered by Binance.</div>
+        <ul>
+          <li><Link href="/disclaimer">Disclaimer</Link><span className='sept'>|</span></li>
+          <li><Link href="/refund-policy">Refund Policy</Link><span className='sept'>|</span></li>
+          <li><Link href="/terms&conditions">Terms & Conditions</Link><span className='sept'>|</span></li>
+          <li><Link href="/about-us">About us</Link><span className='sept'>|</span></li>
+          <li><Link href="/contact-us">Contact us</Link></li>          
+        </ul>
+  </section>
+
 </>
 
             </div>

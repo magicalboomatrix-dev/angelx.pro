@@ -3038,6 +3038,49 @@ button.closeAppLink {
 }
 
 
+section.bottom-footer-section {
+    border-top: 1px solid #ccc;
+    padding: 20px 10px;
+    margin-top: 10px;
+    background-image: url(../images/ex-bg1.png);
+}
+
+section.bottom-footer-section ul {
+    display: flex;
+    justify-content: center;
+}
+
+section.bottom-footer-section ul li {
+    list-style: none;
+}
+.copyr {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 10.5px;
+    font-family: "Mona Sans", sans-serif;
+    font-weight: 500;
+}
+
+section.bottom-footer-section ul li a {
+    font-size: 10px;
+    background: #ebd9a0;
+    border-radius: 20px;
+    padding: 2px 10px;
+
+}
+
+section.bottom-footer-section ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+section.bottom-footer-section ul li span.sept {
+    margin-left: 6px;
+    display: none;
+}
+
 
 
 
