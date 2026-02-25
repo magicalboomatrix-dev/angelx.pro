@@ -352,7 +352,7 @@ export default function Exchange() {
                   </div>
                   <div className="info">
                     <p>
-                      Use a variety of payment methods to trade cryptocurrency,
+                      Use a variety of payment methods to trade digitalcurrency,
                       free, safe and fast.
                     </p>
                   </div>
@@ -377,7 +377,7 @@ export default function Exchange() {
                   <div className="info">
                     <p>
                       Our sophisticated security measures protect your
-                      cryptocurrency from all risks.
+                      digitalcurrency from all risks.
                     </p>
                   </div>
                 </div>
