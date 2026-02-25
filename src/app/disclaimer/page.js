@@ -39,7 +39,7 @@ const Aboutpage = () => {
                       For the purposes of this Disclaimer:
                       <br />
                       <b>Company</b> (referred to as "the Company", "We", "Us" or "Our") refers to
-                      https://www.angelx.exchange/.
+                      https://www.angelx.pro/.
                       <br />
                       <b>Service</b> refers to the Website.
                       <br />
