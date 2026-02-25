@@ -45,7 +45,7 @@ const Aboutpage = () => {
                       <br />
                       <b>You</b> means the individual or legal entity accessing the Service.
                       <br />
-                      <b>Website</b> refers to https://www.angelx.exchange/, accessible via the
+                      <b>Website</b> refers to https://www.angelx.pro/, accessible via the
                       same.
                     </p>
                     <h2>Disclaimer</h2>
@@ -102,8 +102,8 @@ const Aboutpage = () => {
                     <p>
                       If you have any questions about this Disclaimer, you can contact us by
                       visiting: <br />
-                      <a href="https://www.angelx.exchange" target="_blank" rel="noreferrer">
-                        https://www.angelx.exchange
+                      <a href="https://www.angelx.pro" target="_blank" rel="noreferrer">
+                        https://www.angelx.pro
                       </a>
                     </p>
                   </section>
