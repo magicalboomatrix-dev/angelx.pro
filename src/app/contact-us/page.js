@@ -27,10 +27,10 @@ const Aboutpage = () => {
                 
                     <section className="about-hero">
                         <h1>
-                            Contact <span>AngelsX</span>
+                            Contact <span>AngelX</span>
                         </h1>
                         <p style={{color: '#555'}}>
-                            We’re here to help you every step of the way. Whether you have a question about AngelsX USDT Sell, need assistance with your account, or want to learn more about our platform — our support team is ready 24/7.
+                            We’re here to help you every step of the way. Whether you have a question about AngelX USDT Sell, need assistance with your account, or want to learn more about our platform — our support team is ready 24/7.
                         </p>
                     </section>
 
@@ -39,16 +39,16 @@ const Aboutpage = () => {
                     <div className="contact-grid">
                       <div className="contact-card">
                         <h3>📧 Customer Support Email</h3>
-                        <p>angelsxsocial@gmail.com</p>
+                        <p>support@angelx.pro</p>
                       </div>
                       <div className="contact-card">
                         <h3>💬 Live Chat Support</h3>
-                        <p>Available 24/7 inside the AngelsX app and website.</p>
+                        <p>Available 24/7 inside the AngelX app and website.</p>
                       </div>
                       <div className="contact-card">
                         <h3>🌐 Official Website</h3>
-                        <a href="https://www.angelx.exchange/" target="_blank" rel="noreferrer">
-                          https://www.angelx.exchange/
+                        <a href="https://www.angelx.pro/" target="_blank" rel="noreferrer">
+                          https://www.angelx.pro/
                         </a>
                       </div>
                     </div>
