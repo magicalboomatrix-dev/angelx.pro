@@ -27,12 +27,12 @@ const Aboutpage = () => {
                 
                     <section className="about-hero">
                         <h1>
-                            Welcome to <span>AngelsX</span>
+                            Welcome to <span>AngelX</span>
                         </h1>
                         <p style={{color: '#555'}}>
-                            At AngelsX, we believe everyone deserves a
+                            At AngelX, we believe everyone deserves a
                             <b> simple, secure, and rewarding </b>way to experience the world of digital
-                            assets. We created AngelsX to make USDT trading and exchange effortless for
+                            assets. We created AngelX to make USDT trading and exchange effortless for
                             everyone — from first-time investors to seasoned Digital experts.
                         </p>
                     </section>
@@ -50,7 +50,7 @@ const Aboutpage = () => {
                     <section className="about-section">
                         <h2>What We Do</h2>
                         <ul>
-                        <li>Buy &amp; Sell USDT instantly</li>
+                        <li>Sell USDT instantly</li>
                         <li>Top-tier multi-layer security</li>
                         <li>Real-time pricing</li>
                         <li>Smooth, mobile-friendly trading experience</li>
@@ -65,19 +65,19 @@ const Aboutpage = () => {
                         </p>
                     </section>
                     <section className="about-section">
-                        <h2>Why Traders Choose AngelsX</h2>
+                        <h2>Why Traders Choose AngelX</h2>
                         <div className="about-grid">
                         <div>✔ Instant registration &amp; KYC</div>
                         <div>✔ Real-time price tracking</div>
                         <div>✔ Binance liquidity integration</div>
-                        <div>✔ Fast INR deposit &amp; withdrawal</div>
+                        <div>✔ Fast INR withdrawal</div>
                         <div>✔ 24×7 customer support</div>
                         </div>
                     </section>
                     <section className="about-cta">
                         <h2>Start Your Trading Journey</h2>
                         <p>
-                        At AngelsX, we’re not just another exchange —{" "}
+                        At AngelX, we’re not just another exchange —{" "}
                         <b>we’re your partner in financial growth.</b>
                         </p>
                         <a href="/exchange" data-discover="true">
