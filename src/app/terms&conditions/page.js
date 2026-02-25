@@ -47,7 +47,7 @@ const Aboutpage = () => {
                     <strong>Country</strong> – Refers to United Arab Emirates.
                     <br />
                     <strong>Company</strong> (“We”, “Us”, or “Our”) – Refers to
-                    https://www.angelx.exchange/.
+                    https://www.angelx.pro/.
                     <br />
                     <strong>Device</strong> – Any device used to access the Service.
                     <br />
@@ -122,11 +122,11 @@ const Aboutpage = () => {
                     If you have questions about these Terms and Conditions:
                     <br />
                     📧 Email:{" "}
-                    <a href="mailto:angelsxsocial@gmail.com">angelsxsocial@gmail.com</a>
+                    <a href="mailto:support@angelx.pro">support@angelx.pro</a>
                     <br />
                     🌐 Website:{" "}
-                    <a href="https://www.angelx.exchange" target="_blank" rel="noreferrer">
-                      https://www.angelx.exchange
+                    <a href="https://www.angelx.pro" target="_blank" rel="noreferrer">
+                      https://www.angelx.pro
                     </a>
                   </p>
                 </section>
