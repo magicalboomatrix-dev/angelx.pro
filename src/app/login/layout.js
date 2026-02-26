@@ -31,7 +31,7 @@ export default function LoginLayout({ children }) {
       <head>
         <meta
           name="description"
-          content="Log in to AngelX for instant USDT to INR conversions at top rates. Fast processing, secure payouts, reliable support—quickly access your account and sell crypto easily."
+          content="Log in to AngelX for instant USDT-to-INR conversions at top rates. Fast processing, secure payouts, reliable support—quickly access your account and sell crypto easily."
         />
       </head>
       {children}
