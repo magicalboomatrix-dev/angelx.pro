@@ -3,9 +3,9 @@ import Script from "next/script";
 import LayoutClient from "./LayoutClient";
 
 export const metadata = {
-  title: "Welcome to AngelX → India’s #1 Trusted USDT Exchange Platform",
+  title: "Angelx.co → India’s #1 Trusted USDT-to-INR Exchange Platform",
   description:
-    "Log in to AngelX for instant USDT to INR conversions at the best market rates. Fast processing, secure payouts, reliable support—quickly access your account and sell crypto easily.",
+    "Log in to AngelX for instant USDT-to-INR conversions at the best market rates. Lightning-fast processing, secure payouts, and trusted support—log in and sell your crypto in minutes.",
   keywords: [
     "angelx usdt price",
     "angelx crypto",
